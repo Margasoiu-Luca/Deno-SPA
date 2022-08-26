@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf8" />
+		<meta name="viewport" content="width=device-width", initial-scale="1.0" />
+		<title>Single Page App</title>
+		<link rel="stylesheet" href="style/main.css">
+		<script type="module" src="./router.js" defer></script>
+	</head>
+	<body>
+		<aside class="hidden"><p></p></aside>
+		<header>
+			<h1>Single Page App</h1>
+			<p>&nbsp;</p>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/register">Register</a></li>
+				<li><a href="/foo">Foo</a></li>
+				<li><a href="/login">Log in</a></li>
+				<li><a href="/logout">Log out</a></li>
+			</ul>
+		</nav>
+		<main>
+			<article>
+			</article>
+		</main>
+		<footer>
+			<p>&nbsp;</p>
+		</footer>
+	</body>
+	<template id="home">
+	</template>
+	<template id="login">
+		<form name="login">
+			<p><label for="email">Username</label><br /><input type="text" name="user" placeholder="username" /></p>
+			<p><label for="pass">Password</label><br /><input type="password" name="pass" placeholder="password" /></p>
+			<p><button type="submit">Log in</button></p>
+		</form>
+	</template>
+	<template id="register">
+		<form name="register">
+			<p><label for="name">Username</label><br /><input type="text" name="user" placeholder="full name" /></p>
+			<p><label for="pass">Password</label><br /><input type="password" name="pass" placeholder="password" /></p>
+			<p><button type="submit">Create account</button></p>
+		</form>
+	</template>
+	<template id="logout">
+			<p>Do you want to log out?</p>
+			<p><button>OK</button><button>Cancel</button></p>
+	</template>
+	<template id="foo">
+		<form name="upload" method="post">
+			<p><label for="pass">Choose a file</label><br /><input type="file" name="file" /></p>
+			<p><button type="submit">Upload</button></p>
+		</form>
+	</template>
+	<template id="quote">
+		<section>
+			<h2></h2>
+			<p></p>
+		</section>
+	</template>
+</html>

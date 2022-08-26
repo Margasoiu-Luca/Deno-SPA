@@ -1,0 +1,10 @@
+
+/* this is where you will define your stylesheet for non-touchscreen devices */
+
+body {
+	color: red;
+}
+
+.hidden {
+	display: none;
+}
